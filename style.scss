@@ -1,0 +1,71 @@
+$softblue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$mainbackground: hsl(217, 54%, 11%);
+$cardbackground: hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+//reset
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+body {
+    background-color: $mainbackground;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    padding: 20px;
+    background-color: $cardbackground;
+    width: 310px;
+    height: 560px;
+    border-radius: 20px;
+}
+
+img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    color: $white;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+hr {
+    border: 1px solid $line;
+}
+
+.card__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.card__content__eth {
+    color: $cyan
+}
+
+.card__content__creator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__content__creator img {
+    object-fit: scale-down;
+    border: 2px solid $white;
+    border-radius: 50%;
+}
