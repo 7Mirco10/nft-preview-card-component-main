@@ -55,17 +55,44 @@ hr {
 }
 
 .card__content__eth {
-    color: $cyan
+    color: $cyan;
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.card__content__eth img {
+    object-fit: scale-down;
+    width: 10%;
+    height: 60%;
 }
 
 .card__content__creator {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-top: 10px;
+}
+
+.card__content__left {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__content__left img {
+    width: 10%;
+    height: 40%;
 }
 
 .card__content__creator img {
     object-fit: scale-down;
     border: 2px solid $white;
     border-radius: 50%;
+    width: 10%;
+    height: 10%;
+    margin-right: 5px;
 }

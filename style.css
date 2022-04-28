@@ -56,18 +56,55 @@ hr {
 
 .card__content__eth {
   color: #00fff7;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.card__content__eth img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  width: 10%;
+  height: 60%;
 }
 
 .card__content__creator {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10px;
+}
+
+.card__content__left {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__content__left img {
+  width: 10%;
+  height: 40%;
 }
 
 .card__content__creator img {
@@ -75,5 +112,8 @@ hr {
      object-fit: scale-down;
   border: 2px solid white;
   border-radius: 50%;
+  width: 10%;
+  height: 10%;
+  margin-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */
